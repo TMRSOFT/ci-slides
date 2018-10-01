@@ -1,0 +1,47 @@
+section
+    section
+        h2 Run tests
+        pre
+            code.hljs(data-trim contenteditable).
+                npm test
+    section
+        h2 Results
+        pre
+            code.hljs(data-trim contenteditable).
+                Acceptance testing
+                Executing test cases of Acceptance testing.
+                    GET Request to home page of the web app
+                GET / 200 344.774 ms - 21765
+                    √ should return home page (384ms)
+                Finished test cases of Acceptance testing.
+
+                Unit testing
+                Executing test cases of Unit testing.
+                    POST Request to Person API to insert a new person
+                POST /api 201 269.882 ms - 205
+                    √ should return person object (289ms)
+                    GET Request to Person API to retrieve a person object
+                GET /api/5bb23010dd914937bc569553 200 122.173 ms - 201
+                    √ should return person object (129ms)
+                    PUT Request to Person API to update the inserted person
+                PUT /api 202 247.966 ms - 258
+                    √ should return the person object updated (255ms)
+                    DELETE Request to Person API to delete the inserted person
+                DELETE /api 202 123.456 ms - 115
+                    √ should return object with success parameter equal true and the id of the inserted person (129ms)
+                Finished test cases of Unit testing.
+
+
+                5 passing (1s)
+
+                =============================================================================
+                Writing coverage object [C:\Users\Daniel.Lopez\Desktop\Luis\Ingenieria Informatica\Maestria\Modulo 9\Final\ci-mastery\coverage\coverage.json]
+                Writing coverage reports at [C:\Users\Daniel.Lopez\Desktop\Luis\Ingenieria Informatica\Maestria\Modulo 9\Final\ci-mastery\coverage]
+                =============================================================================
+
+                =============================== Coverage summary ===============================
+                Statements   : 35.66% ( 4313/12094 ), 8 ignored
+                Branches     : 15.99% ( 1064/6654 ), 13 ignored
+                Functions    : 24.73% ( 450/1820 )
+                Lines        : 36.13% ( 4283/11853 )
+                ================================================================================
