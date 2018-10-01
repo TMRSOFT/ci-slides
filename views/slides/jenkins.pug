@@ -3,3 +3,56 @@ section
         | Why are we still here?
     section(data-background='./img/wow.gif')
         h1 CI with Jenkins!
+    section
+        h2 Plugins Jenkins
+        table
+            thead
+                tr
+                    th Name
+                    th Description
+            tbody
+                tr
+                    td Cobertura
+                    td Captures code coverage report from Cobertura
+                tr
+                    td Convert to pipeline
+                    td Converts Freestyle jobs to scripted Pipeline job.
+                tr
+                    td GitHub API
+                    td Github integration.
+                tr
+                    td PowerShell
+                    td Windows PowerShell integration.
+                tr
+                    td Slack
+                    td Post build messages to Slack.
+    section
+        h2 CentOS
+        img(src="./img/centos.png", style="width: 30vw; background-color: white")
+        span
+            p.fragment Linux distribution that provides a free, enterprise-class, community-supported computing platform.
+            p.fragment Our empty PC to deploy our app using Jenkins
+    section
+        h2 CHEF
+        img(src="./img/chef.png", style="width: 20vw; background-color: white")
+        span
+            p.fragment Configuration management tool for dealing with machine setup.
+            p.fragment More like chefsito
+    section
+        h2 Chefsito
+        pre
+            code.hljs(data-trim contenteditable).
+                #
+                # Cookbook:: scm
+                # Recipe:: default
+                #
+                # Copyright:: 2018, The Authors, All Rights Reserved.
+
+                execute "install-node" do
+                        command "sudo yum install nodejs -y"
+                        action :run
+                end
+                execute "install -unzip" do
+                        command "sudo yum install unzip -y"
+                        action :run
+                end
