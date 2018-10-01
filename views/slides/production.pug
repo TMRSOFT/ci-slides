@@ -1,0 +1,15 @@
+section
+    section
+        h2 Web app production environment
+        pre
+            code.hljs(data-trim contenteditable).
+                npm install
+                jsdoc .\routes\person.js .\models\person.js .\models\connection.js -d public/wiki
+                npm run production_lin  //For linux
+                npm run production_win  //For Windows
+    section
+        h2 Results
+        pre
+            code.hljs(data-trim contenteditable).
+                Server listening localhost:9000 in production mode.
+                Connected successfully to Mlab production Database Server

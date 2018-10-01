@@ -1,0 +1,17 @@
+section
+    section
+        h2 Web app development environment
+        pre
+            code.hljs(data-trim contenteditable).
+                npm install
+                npm install -only==dev
+                jsdoc .\routes\person.js .\models\person.js .\models\connection.js -d public/wiki
+                npm test
+                npm start
+    section
+        h2 Results
+        pre
+            code.hljs(data-trim contenteditable).
+                Server listening localhost:9000 in development mode.
+                Connected successfully to Mlab development Database Server
+                
